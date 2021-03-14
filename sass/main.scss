@@ -1,0 +1,699 @@
+@import 'base/_modern-normalize.scss';
+@import 'utils/_variables';
+@import 'base/_default';
+@import 'components/logo';
+@import 'components/list';
+@import 'components/navigation';
+@import 'components/button';
+@import 'components/header';    
+@import 'components/footer';  
+
+  
+/********************* MAIN (index.html)*************************/
+  
+/********** MAIN - TITLE ***********/
+  
+.title-section {
+  background-color: $background-dark;
+  text-align: center;
+  padding: 200px 0;
+  
+  /*************Overlay HERO**********************/
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  
+.title {
+  max-width: 696px;
+  margin: 0 auto;
+  text-align: center;
+  color: $main-light;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+  
+.title-button {
+  background-color: $text-accent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $main-light;
+  padding: 10px 32px;
+  margin-top: 30px;
+  border: 1px solid $text-accent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+  
+/************ MAIN - FEATURES ************/
+  
+.decision-section {
+  padding: 94px 0;
+}
+  
+.decision-list {
+  display: flex;
+  align-items: center;
+}
+  
+.decision-list-item {
+  margin-right: 30px;
+}
+  
+.decision-section-card {
+  margin: 0;
+}
+  
+.decision-card-content {
+  margin: 0;
+}
+  
+.decision-icon-div{
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px 0;
+  background-color: $background-light;
+  fill: text-main-dark;
+}
+  
+.decision-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+  
+.decision-item-text {
+  display: block;
+  width: 270px;
+  color: $text-sub;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  text-transform: none;
+}
+  
+/************ MAIN - SIBTITLES ***********/
+  
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center; 
+  letter-spacing: 0.03em;
+  margin: 0 0 50px 0;
+}
+  
+.we-do-section {
+  padding-bottom: 94px;
+}
+  
+.we-do-ul {
+  display: flex;
+}
+  
+.we-do-ul :last-child {
+  margin-right: 0;
+} 
+  
+.we-do-ul-li {
+  margin-right: 30px;
+}
+  
+.we-do-thumb {
+  position: relative;
+  width: 370px; 
+}
+  
+.we-do-thumb-paragraph {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 27px 0; 
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-light;
+  background: rgba(47, 48, 58, 0.8);
+}
+  
+/************* MAIN - OUR TEAM ************/
+  
+.team-section {
+  background-color: $background-light;
+  padding: 94px 0;
+}
+  
+.team-section-ul {
+  display: flex;
+  align-items: center;
+}
+  
+.team-section-ul :last-child {
+  margin-right: 0;
+}
+  
+.team-section-li {
+  margin: 0 30px 0 0;
+  background-color: $main-light; 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+  
+.team-section-card-img {
+  width: 270px;
+}
+  
+.team-section-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  padding: 30px 0;
+}
+  
+.team-section-name {
+  font-weight: 500;
+  margin-bottom: 10px;    
+}
+  
+.team-section-position {
+  color: $text-sub; 
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+  
+.social-link {
+  display: flex;
+  padding: 0;
+}
+  
+.social-link :not(:first-child) {
+  margin-left: 10px;
+}
+  
+.social-link-li {
+  color: $icon; 
+  transition: color $time-duration $timing-function;
+}
+  
+.social-link-li :visited {
+  color: $icon; 
+} 
+  
+.social-link-li :hover, 
+.social-link-li :focus {
+  border-radius: 50%;
+  fill: $main-light;
+  background-color: $text-accent;
+  outline: none;
+  transition: background-color $time-duration $timing-function, fill $time-duration $timing-function;
+}
+  
+.social-link-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  color: currentColor;
+  border-radius: 50%;
+  transition: background-color $time-duration $timing-function, fill $time-duration $timing-function;
+}
+
+.social-link-a :hover, 
+.social-link-a :focus {
+  border-radius: 0;
+  background-color: rgb(33,150,243);
+  transition: background-color $time-duration $timing-function, fill $time-duration $timing-function;
+}
+  
+.social-link-icon {
+  border-color: none;
+}
+  
+.clients-section {
+  padding: 94px 0;
+}
+  
+.clients-ul {
+  display: flex;
+}
+  
+.clients-ul :not(:first-child) {
+  margin-left: 30px;
+}
+  
+.clients-ul :hover {
+  fill: $text-accent;
+  border-color: $text-accent; 
+  transition: border-color $time-duration $timing-function, fill $time-duration $timing-function;
+}
+  
+.clients-ul :focus  {
+  fill: $text-accent;
+  border-color: $text-accent; 
+  outline: none;
+  transition: border-color $time-duration $timing-function, fill $time-duration $timing-function;
+}
+  
+.clients-li {
+  color: $icon;
+  fill: $icon;
+}
+  
+.clients-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  fill: currentColor;
+  color: currentColor;
+  border: 1px solid currentColor;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color $time-duration $timing-function, fill $time-duration $timing-function;
+}
+  
+.clients-a :visited {
+  fill: currentColor; 
+  color: currentColor;
+}
+  
+/*********** MODAL WINDOW ***********/
+  
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  opacity: 1;
+  transition: opacity $time-duration $timing-function;
+}
+  
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;  
+  transition: opacity $time-duration $timing-function, visibility $time-duration $timing-function;
+}
+  
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform $time-duration $timing-function; 
+}
+  
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  background: $main-light;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow-y: auto;
+  transition: transform $time-duration $timing-function;
+}
+    
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #000000;
+  outline: none;
+  transition: fill $time-duration $timing-function;
+}
+  
+.modal__close-div :hover, .modal__close-div :focus {
+  fill: $text-accent;
+  cursor: pointer;
+  transition: fill $time-duration $timing-function;
+}
+
+  
+/* .signup-icon :hover  {
+  fill: $text-accent;
+  background-color: $text-accent;
+  color: $text-accent;
+} */
+  
+/* .modal-close-button :hover, .modal-close-button :focus {
+  fill: $text-accent;
+  border-color: $text-accent;
+} */
+  
+.signup-form {
+  width: 448px;
+  margin: 40px auto;
+}
+  
+.signup-form__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.signup-form__title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+  
+.signup-form__item {
+  margin-bottom: 10px;
+  width: 100%;
+}
+  
+.signup-form__item :hover, .signup-form__item :focus {
+  cursor: pointer;
+  border-color: $text-accent;
+  outline: none;
+  transition: border-color $time-duration $timing-function;
+}
+  
+.signup-form__item :hover > .signup-form__icon {
+  fill: $text-accent;
+  transition: fill $time-duration $timing-function;
+}
+  
+.signup-form__item:focus > .signup-form__icon {
+  fill: $text-accent;
+  transition: fill $time-duration $timing-function;
+}
+  
+.signup__comment {
+  margin-bottom: 20px;
+  padding: 0;
+}
+  
+.signup-form__agreement {
+  display: block;
+  margin-bottom: 30px; 
+}
+  
+.signup-form__checkbox--default {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+  
+.signup-form__checkbox--default:checked + .signup-form__checkbox-icon {
+  border: none;
+  border-radius: 2px;
+  background-color: $text-accent;
+  fill: $text-accent;
+}
+  
+.signup-form__checkbox-icon {
+  margin-right: 7px; 
+  border: 2px solid $text-main-dark;
+  border-radius: 2px; 
+  background-color: $main-light;
+  fill: $main-light;
+}
+  
+.signup-form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $text-sub;
+}
+  
+.signup-form__agreement-label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; 
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+  
+.signup-form__agreement-text {
+  margin: 0;
+  padding: 0;
+}
+  
+.signup-form__agreement-link {
+  color: $text-accent;
+  text-decoration: underline;
+}
+  
+.signup-form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  transition: border-color $time-duration $timing-function;
+}
+  
+.signup-form__input.comment-input {
+  height: 120px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.signup-form__div {
+  position: relative;
+}
+  
+.signup-form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  fill: $text-main-dark;
+  transition: fill $time-duration $timing-function;
+}
+
+// .signup-div-button {
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// .signup-button {
+//   width: 200px;
+//   height: 50px;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 30px;
+//   letter-spacing: 0.06em;
+//   color: var(--main-light);
+//   background: var(--signup-form-button);
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+//   border-color: var(--text-accent);
+//   margin: 0;
+//   padding: 0;
+// }
+  
+.signup-form__item-button {
+  padding: 0;
+  margin: 0;
+}
+  
+.signup-form__button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $main-light;
+  background: $signup-form-button;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: $text-accent;
+  margin: 0;
+  padding: 0;
+}
+  
+/**********  PORTFOLIO  *************/
+  
+.project-section {
+  padding: 94px 0;
+}
+  
+.project-filter-ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+  
+.project-filter-ul :not(:last-child){
+  margin-right: 8px;
+}
+  
+.project-filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center; 
+  letter-spacing: 0.03em;
+  background-color: $background-light;
+  padding: 6px 22px;  
+  border: 1px solid $background-light;
+  border-radius: 4px;
+  transition: color $time-duration $timing-function, background-color $time-duration $timing-function, border $time-duration $timing-function;
+}
+  
+.project-filter-button:focus {
+  color: $main-light;
+  background-color: $text-accent;
+  outline: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid $text-accent;
+  transition: color $time-duration $timing-function, box-shadow $time-duration $timing-function, background-color $time-duration $timing-function, border $time-duration $timing-function;
+}
+  
+.project-filter-button:hover {
+  color: $main-light;
+  background-color: $text-accent;
+  outline: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid $text-accent;
+  transition: color $time-duration $timing-function, box-shadow $time-duration $timing-function, background-color $time-duration $timing-function, border $time-duration $timing-function;
+}
+  
+.project-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * #{$card-set-gap});
+  margin-left: calc(-1 * #{$card-set-gap});
+}
+  
+.project-ul-li {
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+  margin-top: $card-set-gap;
+  margin-left: $card-set-gap;
+  border: 1px solid $project-border;
+}
+  
+.project-ul :hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  /* transition: box-shadow $time-duration $timing-function; */
+}
+  
+.project-ul :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  /* transition: box-shadow $time-duration $timing-function; */
+}
+  
+.project-ul-li :hover {
+  box-shadow: none;
+}
+  
+.project-ul-li :focus {
+  border: none; 
+  outline: none;
+}
+  
+.project-card {
+  display: block;
+  color: currentColor;
+}
+  
+.project-card-img {
+  position: relative;
+  overflow: hidden;
+}
+  
+.project-card-describe-hover {
+  position: absolute;
+  padding: 63px 24px;
+
+  /* overflow: auto; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $main-light;
+  outline: none;
+  border: none;
+  opacity: 0;
+  transform: translatey(100%);
+  transition: transform $time-duration $timing-function, opacity $time-duration $timing-function;
+}
+  
+.project-ul-li :hover .project-card-describe-hover, .project-ul-li :focus .project-card-describe-hover {
+  opacity: 1;
+  transform: translatey(0);
+  transition: transform $time-duration $timing-function, opacity $time-duration $timing-function;
+}
+  
+.project-content {
+  padding: 20px 24px;
+}
+  
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px; 
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+  
+.project-type {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: $text-sub;
+}

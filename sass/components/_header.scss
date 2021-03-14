@@ -1,0 +1,68 @@
+/*********** HEADER ************/
+.section {
+  display: flex;
+}  
+  
+.section-header {
+  position: sticky;
+  top: -1px;
+  z-index: 2; 
+  background-color: $main-light; 
+  color: $text-main-dark;
+  padding: 0;
+  border: 1px solid $header-border;
+}
+  
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  border-width: 1px;
+
+  &:focus {
+  outline: none;
+  }
+}
+  
+  .contacts {
+    margin-left: auto;
+   
+    &__first-item {
+      margin-right: 30px;
+    }
+  
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  
+    &__link {
+      color: $text-sub;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      outline: none;
+      transition: color $time-duration $timing-function;
+  
+    &.link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+  
+    &:visited {
+      color: $text-sub;
+    }
+  
+    &:hover {
+      color: $text-accent;
+      transition: color $time-duration $timing-function;
+    }
+  
+    &:focus {
+      color: $text-accent;
+      transition: color $time-duration $timing-function;
+    } 
+  } 
+}
