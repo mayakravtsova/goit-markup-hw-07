@@ -1,10 +1,8 @@
-/*********** HEADER ************/
-.section {
-  display: flex;
-}  
+/*********** HEADER ************/ 
   
-.section-header {
+.header-section {
   position: sticky;
+  display: flex;
   top: -1px;
   z-index: 2; 
   background-color: $main-light; 
@@ -20,29 +18,29 @@
   border-width: 1px;
 
   &:focus {
-  outline: none;
+    outline: none;
   }
 }
   
-  .contacts {
-    margin-left: auto;
+.contacts {
+  margin-left: auto;
    
-    &__first-item {
-      margin-right: 30px;
-    }
+  &__first-item {
+    margin-right: 30px;
+  }
   
-    &__icon {
-      margin-right: 10px;
-      fill: currentColor;
-    }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
   
-    &__link {
-      color: $text-sub;
-      font-weight: 500;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      outline: none;
-      transition: color $time-duration $timing-function;
+  &__link {
+    color: $text-sub;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    outline: none;
+    transition: color $time-duration $timing-function;
   
     &.link {
       display: flex;
@@ -50,11 +48,11 @@
       justify-content: center;
       white-space: nowrap;
     }
-  
+    
     &:visited {
       color: $text-sub;
     }
-  
+    
     &:hover {
       color: $text-accent;
       transition: color $time-duration $timing-function;
