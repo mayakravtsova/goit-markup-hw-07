@@ -15,27 +15,27 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header class="header-section"> 
-      <div class="container list">  
-      <nav class="nav list">
+    <header class="page-head"> 
+      <div class="container head-container">  
+      <nav class="nav">
         <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-        <ul class="nav__list list">
+        <ul class="nav__list">
           <li class="nav__item"><a href="./index.html" class="nav__current-link">Студия</a></li>
           <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
         </ul>   
       </nav> 
-      <ul class="contacts list">   
-        <li class="contacts__first-item">
-          <a class="contacts__link link" href="mailto:info@devstudio.com">
+      <ul class="contacts">   
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
             <svg class="contacts__icon" width="16px" height="12px">
               <use href="./images/icons.svg#mail"></use>
             </svg>
             <p>info@devstudio.com</p>
           </a>
         </li>
-        <li>
-          <a class="contacts__link link" href="tel:+380961111111">
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
             <svg class="contacts__icon" width="10px" height="16px">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
@@ -54,10 +54,11 @@
       </section>  
       <section class="decision">
         <div class="container">
+        <h2 class="decision__title">TITLE</h2>
         <ul class="decision__list">
           <li class="decision__item">
             <article class="decision__card">
-              <div class="decision__icon-div">
+              <div class="decision__icon-box">
                 <svg class="decision-icon" width="70px" height="70px">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
@@ -70,7 +71,7 @@
           </li> 
           <li class="decision__item">
             <article class="decision__card">
-              <div class="decision__icon-div">
+              <div class="decision__icon-box">
                 <svg class="decision-icon" width="70px" height="70px">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
@@ -83,7 +84,7 @@
           </li> 
           <li class="decision__item">
             <article class="decision__card">
-              <div class="decision__icon-div">
+              <div class="decision__icon-box">
                 <svg class="decision-icon" width="70px" height="70px">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
@@ -96,7 +97,7 @@
           </li> 
           <li class="decision__item">
             <article class="decision__card">
-              <div class="decision__icon-div">
+              <div class="decision__icon-box">
                 <svg class="decision-icon" width="70px" height="70px">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
@@ -116,9 +117,7 @@
           <ul class="scope__list">
             <li class="scope__item">
               <div class="scope__thumb">
-                <div>
-                  <img src="./images/we_do_1.jpg" alt="close-up-image-programer-working-his-desk-office">
-                </div>
+                <img src="./images/we_do_1.jpg" alt="close-up-image-programer-working-his-desk-office">
                 <div class="scope__name">
                   <p>Десктопные приложения</p>
                 </div> 
@@ -126,9 +125,7 @@
             </li>
             <li class="scope__item">
               <div class="scope__thumb">
-                <div>
-                  <img src="./images/we_do_2.jpg" alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones">
-                </div>
+                <img src="./images/we_do_2.jpg" alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones">
                 <div class="scope__name">
                   <p>Мобильные приложения</p>
                 </div>
@@ -136,9 +133,7 @@
             </li>
             <li class="scope__item">
               <div class="scope__thumb">
-                <div>
-                  <img src="./images/we_do_3.jpg" alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet">
-                </div>
+                <img src="./images/we_do_3.jpg" alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet">
                 <div class="scope__name">
                   <p>Дизайнерские решения</p>
                 </div>
@@ -368,9 +363,9 @@
         </div>
       </section>
     </main>   
-    <footer class="section footer-section">
-      <div class="container footer">
-        <div class="footer-contacts footer__div">
+    <footer class="footer-section">
+      <div class="container footer__container">
+        <div class="footer-contacts">
           <a href="./index.html" class="logo footer-contacts__logo"><span class="logo__accent">Web</span>Studio</a>
           <address>
             <p>г. Киев, пр-т Леси Украинки, 26</p>
@@ -380,7 +375,7 @@
             </ul>
           </address>          
         </div>
-        <div class="footer-social-links footer__div">
+        <div class="footer-social-links">
           <p class="footer-social-links__topic footer__topic">Присоединяйтесь</p>
           <ul class="footer-social-links__list social-link">
             <li class="footer-social-links__item">
@@ -413,7 +408,7 @@
             </li>
           </ul>  
         </div>
-        <div class="footer__div"> 
+        <div> 
           <p class="footer__topic">Подпишитесь на рассылку</p>
           <div class="footer-signup">
              <div>
@@ -432,7 +427,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal__close-div">
+        <div class="modal__close-block">
           <button class="modal__close-button" data-modal-close>
             <svg width="18px" height="18px">
               <use href="./images/icons.svg#close-button"></use>
@@ -447,7 +442,7 @@
               </li>
               <li class="signup-form__item">
                 <label for="signup-username" class="signup-form__label">Имя</label>
-                <div class="signup-form__div">
+                <div class="signup-form__block">
                  <input type="text" class="signup-form__input" name="signup-username" id="signup-username"/>
                  <svg class="signup-form__icon" width="18px" height="18px">
                    <use href="./images/icons.svg#modal-person"></use>
@@ -456,7 +451,7 @@
               </li>
               <li class="signup-form__item">
                 <label for="signup-phone" class="signup-form__label">Телефон</label>
-                <div class="signup-form__div">
+                <div class="signup-form__block">
                   <input type="tel" class="signup-form__input" name="signup-phone" id="signup-phone"/>
                   <svg class="signup-form__icon" width="18px" height="18px">
                     <use href="./images/icons.svg#modal-phone"></use>
@@ -465,7 +460,7 @@
               </li>          
               <li class="signup-form__item">
                 <label for="signup-email" class="signup-form__label">Почта</label>
-                <div class="signup-form__div">
+                <div class="signup-form__block">
                   <input type="email" class="signup-form__input" name="signup-email" id="signup-email"/>
                   <svg class="signup-form__icon" width="18px" height="18px">
                     <use href="./images/icons.svg#modal-email"></use>

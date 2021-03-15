@@ -1,7 +1,10 @@
-/************ FEATURES ************/
-
 .decision {
   padding: 94px 0;
+}
+
+.decision__title {
+  display: none;
+  visibility: hidden;
 }
 
 .decision__list {
@@ -17,7 +20,7 @@
   margin: 0;
 }
 
-.decision__icon-div {
+.decision__icon-box {
   display: flex;
   width: 270px;
   height: 120px;

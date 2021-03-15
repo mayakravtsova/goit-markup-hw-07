@@ -16,27 +16,27 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>   
   <body>
-    <header class="section section-header"> 
-      <div class="container list">  
-      <nav class="nav list">
+    <header class="page-head"> 
+      <div class="container head-container">  
+      <nav class="nav">
         <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-        <ul class="nav__list list">
+        <ul class="nav__list">
           <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
           <li class="nav__item"><a href="./portfolio.html" class="nav__current-link">Портфолио</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
         </ul>   
       </nav> 
-      <ul class="contacts list">   
-        <li class="contacts__first-item">
-          <a class="contacts__link link" href="mailto:info@devstudio.com">
+      <ul class="contacts">   
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
             <svg class="contacts__icon" width="16px" height="12px">
               <use href="./images/icons.svg#mail"></use>
             </svg>
             <p>info@devstudio.com</p>
           </a>
         </li>
-        <li>
-          <a class="contacts__link link" href="tel:+380961111111">
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
             <svg class="contacts__icon" width="10px" height="16px">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
@@ -49,12 +49,12 @@
     <main>
       <section class="project">
         <div class="container">
-        <ul class="project__filter-list">
-          <li><button class="project__filter-button">Все</button></li>
-          <li><button class="project__filter-button">Веб-сайты</button></li>
-          <li><button class="project__filter-button">Приложения</button></li>
-          <li><button class="project__filter-button">Дизайн</button></li>
-          <li><button class="project__filter-button">Маркетинг</button></li>
+        <ul class="filter">
+          <li><button class="filter__button">Все</button></li>
+          <li><button class="filter__button">Веб-сайты</button></li>
+          <li><button class="filter__button">Приложения</button></li>
+          <li><button class="filter__button">Дизайн</button></li>
+          <li><button class="filter__button">Маркетинг</button></li>
         </ul>
         <ul class="project__list">
           <li class="project__item">
@@ -187,9 +187,9 @@
         </div>
       </section>
     </main>
-    <footer class="section footer-section">
-      <div class="container footer">
-        <div class="footer-contacts footer__div">
+    <footer class="footer-section">
+      <div class="container footer__container">
+        <div class="footer-contacts">
           <a href="./index.html" class="logo footer-contacts__logo"><span class="logo__accent">Web</span>Studio</a>
           <address>
             <p>г. Киев, пр-т Леси Украинки, 26</p>
@@ -199,7 +199,7 @@
             </ul>
           </address>          
         </div>
-        <div class="footer-social-links footer__div">
+        <div class="footer-social-links">
           <p class="footer-social-links__topic footer__topic">Присоединяйтесь</p>
           <ul class="footer-social-links__list social-link">
             <li class="footer-social-links__item">
@@ -232,7 +232,7 @@
             </li>
           </ul>  
         </div>
-        <div class="footer__div"> 
+        <div> 
           <p class="footer__topic">Подпишитесь на рассылку</p>
           <div class="footer-signup">
              <div>

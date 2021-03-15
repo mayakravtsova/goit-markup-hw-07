@@ -1,8 +1,7 @@
 /*********** HEADER ************/ 
   
-.header-section {
+.page-head {
   position: sticky;
-  display: flex;
   top: -1px;
   z-index: 2; 
   background-color: $main-light; 
@@ -21,33 +20,38 @@
     outline: none;
   }
 }
+
+.head-container {
+  display: flex;
+  align-items: center;
+}
   
 .contacts {
+  display: flex;
+  align-items: center;
   margin-left: auto;
    
-  &__first-item {
-    margin-right: 30px;
-  }
-  
+  // &__item :not(:last-child) {
+  //   margin-right: 30px;
+  // }
+
   &__icon {
+    margin-left: 30px;
     margin-right: 10px;
     fill: currentColor;
   }
   
   &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
     color: $text-sub;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
     outline: none;
     transition: color $time-duration $timing-function;
-  
-    &.link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      white-space: nowrap;
-    }
     
     &:visited {
       color: $text-sub;

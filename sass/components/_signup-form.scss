@@ -51,7 +51,7 @@
   transition: fill $time-duration $timing-function;
 }
   
-.modal__close-div {
+.modal__close-block {
   & :hover {
     fill: $text-accent;
     cursor: pointer;
@@ -205,7 +205,7 @@
   letter-spacing: 0.01em;
 }
 
-.signup-form__div {
+.signup-form__block {
   position: relative;
 }
   

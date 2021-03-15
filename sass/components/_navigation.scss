@@ -1,22 +1,29 @@
 .nav {
+  display: flex;
+  align-items: center;
 
-    &__list :not(:last-child) {
-      margin-right: 50px;
-    } 
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list :not(:last-child) {
+    margin-right: 50px;
+  } 
   
-    &__item {
-      position: relative;
-    }
+  &__item {
+    position: relative;
+  }
   
-    &__link {
-      display: block;
-      padding: 32px 0;
-      font-weight: 500;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      outline: none; 
-      color: $text-main-dark;
-      transition: color $time-duration $timing-function; 
+  &__link {
+    display: block;
+    padding: 32px 0;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    outline: none; 
+    color: $text-main-dark;
+    transition: color $time-duration $timing-function; 
   
     &:visited {
       color: $text-main-dark;
