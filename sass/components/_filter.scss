@@ -1,15 +1,15 @@
-.filter {
+.filters {
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 0 0 50px 0;
 }
   
-.filter :not(:last-child){
+.filters :not(:last-child){
   margin-right: 8px;
 }
   
-.filter__button {
+.filters__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;

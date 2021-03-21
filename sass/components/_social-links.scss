@@ -1,13 +1,13 @@
-.social-link {
+.social-net {
   display: flex;
   padding: 0;
 }
   
-.social-link :not(:first-child) {
+.social-net :not(:first-child) {
   margin-left: 10px;
 }
   
-.social-link__list {
+.social-net__item {
   color: $icon; 
   transition: color $time-duration $timing-function;
 
@@ -25,7 +25,7 @@
   }
 }
  
-.social-link__link {
+.social-net__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +44,6 @@
   }
 }
  
-.social-link__icon {
+.social-net__icon {
   border-color: none;
 }

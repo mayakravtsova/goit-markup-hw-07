@@ -65,11 +65,11 @@
   }
 }
     
-.footer-social-links {
+.footer-social {
   margin-right: 93px;
 }
     
-.footer-social-links__item {
+.footer-social__item {
   fill: $main-light;
   background-color: $footer-social-links;
   border-radius: 50%;
@@ -89,7 +89,7 @@
   }
 }
      
-.footer-social-links__item .social-link-a :visited {
+.footer-social__item .social-net__link :visited {
   fill: $main-light;
 }
     
